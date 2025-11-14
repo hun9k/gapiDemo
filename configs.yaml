@@ -1,0 +1,22 @@
+app:
+  name: "GAPI APP" # 自定义应用名称
+  mode: dev # dev prod test
+httpService: # HTTP服务配置
+  enabled: true # 是否启用
+  addr: localhost:8088 # 监听地址
+  tls: false # 是否启用https
+log: # 日志
+  format: json # text json
+  output: std # std file
+  file: # 如果"output==file"则使用
+    filename: "./logs/app.log" # 日志文件路径
+    maxSize: 100 # 单个文件最大(MB)
+    maxBackups: 7 # 最多保留几个备份文件
+    maxAge: 30 # 备份文件最大保存多少天
+    compress: true # 压缩旧日志（gzip）
+mysql:
+  enabled: false
+  dsn: user:password@tcp(host:port)/dbname?charset=utf8mb4&parseTime=True&loc=Local
+redis:
+  enabled: false
+  dsn:

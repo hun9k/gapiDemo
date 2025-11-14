@@ -1,0 +1,59 @@
+
+[GIN-debug] GET    /                         --> main.main.func1 (3 handlers)
+time=2025-11-13T18:17:28.710+08:00 level=INFO msg="application is running" name="GAPI APP"
+time=2025-11-13T18:17:28.744+08:00 level=INFO msg="HTTP service is listening" addr=localhost:8088
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
+[GIN-debug] GET    /                         --> main.main.func1 (3 handlers)
+time=2025-11-13T21:33:03.622+08:00 level=INFO msg="application is running" name="GAPI APP"
+time=2025-11-13T21:33:03.655+08:00 level=INFO msg="HTTP service is listening" addr=localhost:8088
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
+[GIN] 2025/11/13 - 21:33:24 | 200 |            0s |       127.0.0.1 | GET      "/"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+time=2025-11-14T09:22:05.741+08:00 level=INFO msg="application is running" name="GAPI APP"
+time=2025-11-14T09:22:05.773+08:00 level=INFO msg="HTTP service is listening" addr=localhost:8088
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
+[GIN-debug] GET    /                         --> gapiDemo/admin.init.0.func1 (3 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+time=2025-11-14T09:22:42.906+08:00 level=INFO msg="application is running" name="GAPI APP"
+time=2025-11-14T09:22:42.938+08:00 level=INFO msg="HTTP service is listening" addr=localhost:8088
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
+[GIN-debug] GET    /admin/ping               --> gapiDemo/admin.init.0.func1 (3 handlers)
+[GIN-debug] POST   /admin/v1/contents        --> gapiDemo/admin.init.0.func2 (3 handlers)
+[GIN-debug] DELETE /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func3 (3 handlers)
+[GIN-debug] DELETE /admin/v1/contents        --> gapiDemo/admin.init.0.func4 (3 handlers)
+[GIN-debug] PUT    /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func5 (3 handlers)
+[GIN-debug] PUT    /admin/v1/contents        --> gapiDemo/admin.init.0.func6 (3 handlers)
+[GIN-debug] GET    /admin/v1/contents        --> gapiDemo/admin.init.0.func7 (3 handlers)
+[GIN-debug] GET    /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func8 (3 handlers)
+{"time":"2025-11-14T12:34:30.4833752+08:00","level":"INFO","msg":"application is running","name":"GAPI APP"}
+{"time":"2025-11-14T12:34:30.5240971+08:00","level":"INFO","msg":"HTTP service is listening","addr":"localhost:8088"}
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
+[GIN-debug] GET    /admin/ping               --> gapiDemo/admin.init.0.func1 (3 handlers)
+[GIN-debug] POST   /admin/v1/contents        --> gapiDemo/admin.init.0.func2 (3 handlers)
+[GIN-debug] DELETE /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func3 (3 handlers)
+[GIN-debug] DELETE /admin/v1/contents        --> gapiDemo/admin.init.0.func4 (3 handlers)
+[GIN-debug] PUT    /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func5 (3 handlers)
+[GIN-debug] PUT    /admin/v1/contents        --> gapiDemo/admin.init.0.func6 (3 handlers)
+[GIN-debug] GET    /admin/v1/contents        --> gapiDemo/admin.init.0.func7 (3 handlers)
+[GIN-debug] GET    /admin/v1/contents/:id    --> gapiDemo/admin.init.0.func8 (3 handlers)
+{"time":"2025-11-14T12:37:19.8220339+08:00","level":"INFO","msg":"application is running","name":"GAPI APP"}
+{"time":"2025-11-14T12:37:19.8563705+08:00","level":"INFO","msg":"HTTP service is listening","addr":"localhost:8088"}
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8088
