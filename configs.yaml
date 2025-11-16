@@ -15,8 +15,6 @@ log: # 日志
     maxAge: 30 # 备份文件最大保存多少天
     compress: true # 压缩旧日志（gzip）
 mysql:
-  enabled: false
-  dsn: user:password@tcp(host:port)/dbname?charset=utf8mb4&parseTime=True&loc=Local
+  dsn: root:secret@tcp(localhost:8306)/gapidemo?charset=utf8mb4&parseTime=True&loc=Local
 redis:
-  enabled: false
   dsn:

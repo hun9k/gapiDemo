@@ -1,0 +1,71 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:8
+    command: mysqld --character-set-server=utf8mb4
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: gapidemo
+    volumes:
+      - ./volumes/mysql/data:/var/lib/mysql
+    ports:
+      - '8306:3306'
+  
+  # docker exec -it gapidemo-mysql-1 mysql -psecret
+
+#  redis:
+#    image: redis:7
+#    restart: alwaysexi
+#    ports:
+#      - '36379:6379'
+#    volumes:
+#      - ./volumes/redis/data:/data
+
+#  api:
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+#    restart: always
+#    ports:
+#      - '8088:8088'
+#    volumes:
+#      - ./volumes/api/configs:/src/api/configs
+#      - ./volumes/api/logs:/src/api/logs
+#    depends_on:
+#      - mysql
+#      - redis
+#    links:
+#      - mysql
+#      - redis
+
+#volumes:
+#  mysql:
+#  redis:
+
+
+#  web:
+#    build:
+#      context: ./web
+#      dockerfile: ./Dockerfile
+#    restart: always
+#    ports:
+#      - '48080:8080'
+#    depends_on:
+#      - api
+#    command: [ 'nginx-debug', '-g', 'daemon off;' ]
+#
+#  api:
+#    build:
+#      context: ./api
+#      dockerfile: ./Dockerfile
+#    restart: always
+#    ports:
+#      - '48880:8880'
+#      - '48890:8890'
+#    depends_on:
+#      - mysql
+#      - redis
+#    links:
+#      - mysql
+#      - redis
