@@ -2,7 +2,7 @@ app:
   name: "GAPI APP" # 自定义应用名称
   mode: dev # dev prod test
 httpService: # HTTP服务配置
-  enabled: true # 是否启用
+  enable: true # 是否启用
   addr: localhost:8088 # 监听地址
   tls: false # 是否启用https
 log: # 日志

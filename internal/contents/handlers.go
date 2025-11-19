@@ -1,4 +1,4 @@
-package content
+package contents
 
 import "github.com/gin-gonic/gin"
 

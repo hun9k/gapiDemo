@@ -1,94 +1,94 @@
-package content
+package contents
 
 import (
-	"gapiDemo/apis/_commons"
-	"gapiDemo/apis/_schemas"
+	"github.com/hun9k/gapi"
 )
 
 // 创建一个资源
 type ReqPost struct {
-	_schemas.Contents
+	Subject  string `json:"subject,omitempty" gorm:"subject"`
+	AuthorId uint   `json:"author_id,omitempty" gorm:"author_id"`
 }
 type RespPost struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 删除一个资源
 type ReqDeleteId struct {
-	_commons.ReqId
+	gapi.ReqId
 }
 type RespDeleteId struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 删除多个资源
 type ReqDelete struct {
-	_commons.Req
+	gapi.Req
 }
 type RespDelete struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 恢复一个资源
 type ReqPatchIdRestore struct {
-	_commons.ReqId
+	gapi.ReqId
 }
 type RespPatchIdRestore struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 恢复多个资源
 type ReqPatchRestore struct {
-	_commons.Req
+	gapi.Req
 }
 type RespPatchRestore struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 更新一个资源
 type ReqPutId struct {
-	_commons.ReqId
+	gapi.ReqId
 }
 type RespPutId struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 更新多个资源
 type ReqPut struct {
-	_commons.Req
+	gapi.Req
 }
 type RespPut struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 更新一个资源的部分字段
 type ReqPatchId struct {
-	_commons.ReqId
+	gapi.ReqId
 }
 type RespPatchId struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 更新多个资源的部分字段
 type ReqPatch struct {
-	_commons.Req
+	gapi.Req
 }
 type RespPatch struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 获取一个资源
 type ReqGetId struct {
-	_commons.ReqId
+	gapi.ReqId
 }
 type RespGetId struct {
-	_commons.Resp
+	gapi.Resp
 }
 
 // 获取多个资源
 type ReqGet struct {
-	_commons.Req
+	gapi.Req
 }
 type RespGet struct {
-	_commons.Resp
+	gapi.Resp
 }

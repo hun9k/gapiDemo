@@ -1,13 +1,12 @@
-module gapiDemo
+module github.com/hun9k/gapiDemo
 
 go 1.25.0
 
-replace github.com/hun9k/gapi => ../gapi
+replace github.com/hun9k/gapi => D:/apps/gapi
 
 require (
 	github.com/gin-gonic/gin v1.11.0
 	github.com/hun9k/gapi v0.0.0-00010101000000-000000000000
-	gorm.io/gorm v1.31.1
 )
 
 require (
@@ -58,4 +57,5 @@ require (
 	google.golang.org/protobuf v1.36.9 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gorm.io/driver/mysql v1.6.0 // indirect
+	gorm.io/gorm v1.31.1 // indirect
 )
