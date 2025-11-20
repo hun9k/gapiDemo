@@ -1,4 +1,4 @@
-package apis
+package routers
 
 import (
 	"github.com/gin-gonic/gin"

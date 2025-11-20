@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "github.com/hun9k/gapiDemo/apis"
+	_ "github.com/hun9k/gapiDemo/routers"
 
 	"github.com/hun9k/gapi"
 )
