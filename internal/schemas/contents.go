@@ -1,14 +1,14 @@
 package schemas
 
 import (
-	"github.com/hun9k/gapi"
+	"github.com/hun9k/gapi/schema"
 	"gorm.io/gorm"
 )
 
 type Contents struct {
 	Subject  string `gorm:"subject"`
 	AuthorId uint   `gorm:"author_id"`
-	gapi.Model
+	schema.Model
 }
 
 // hooks

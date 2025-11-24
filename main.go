@@ -1,16 +1,11 @@
 package main
 
 import (
+	"github.com/hun9k/gapi/app"
 	_ "github.com/hun9k/gapiDemo/routers"
-
-	"github.com/hun9k/gapi"
 )
 
 func main() {
 	// 应用运行
-	app := gapi.App()
-
-	if err := app.Run(); err != nil {
-		gapi.Log().Error(err.Error())
-	}
+	app.Run()
 }

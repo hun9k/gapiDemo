@@ -6,7 +6,7 @@ import (
 
 func init() {
 	// Rest API
-	group := routerGroup("v1").Group("contents")
+	group := group("v1").Group("contents")
 	group.POST("", contents.Post)                  // 创建一个资源
 	group.DELETE(":id", contents.DeleteId)         // 删除一个资源
 	group.DELETE("", contents.Delete)              // 删除多个资源

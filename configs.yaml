@@ -1,10 +1,16 @@
 app:
   name: "GAPI APP" # 自定义应用名称
   mode: dev # dev prod test
-httpService: # HTTP服务配置
+http: # HTTP服务配置
   enable: true # 是否启用
-  addr: localhost:8088 # 监听地址
-  tls: false # 是否启用https
+  addr: :8080 # 监听地址
+  http3:
+    enable: true # 是否启用HTTP/3
+  tls: 
+    enable: true # 是否启用https
+    addr: :8443
+    certfile: localhost.pem
+    keyfile: localhost-key.pem
 log: # 日志
   format: json # text json
   output: std # std file
