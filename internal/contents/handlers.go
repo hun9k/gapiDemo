@@ -4,7 +4,10 @@ import "github.com/gin-gonic/gin"
 
 // 创建一个资源
 func Post(ctx *gin.Context) {
+	body := PostBody{}
+	if err := ctx.ShouldBind(&body); err != nil {
 
+	}
 }
 
 // 删除一个资源
