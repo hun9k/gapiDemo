@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/hun9k/gapiDemo/internal/contents"
+	"github.com/hun9k/gapiDemo/internal/handlers/contents"
 )
 
 func init() {

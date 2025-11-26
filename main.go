@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// db.DB().AutoMigrate(&schemas.Contents{})
 	// 应用运行
 	app.Run()
 }

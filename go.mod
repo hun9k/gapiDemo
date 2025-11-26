@@ -6,8 +6,7 @@ replace github.com/hun9k/gapi => D:/apps/gapi
 
 require (
 	github.com/gin-gonic/gin v1.11.0
-	github.com/hun9k/gapi v0.0.0-00010101000000-000000000000
-	gorm.io/datatypes v1.2.7
+	github.com/hun9k/gapi v0.0.0-20251124171743-56e9076bdc5b
 	gorm.io/gorm v1.31.1
 )
 
@@ -26,7 +25,6 @@ require (
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/goccy/go-yaml v1.18.0 // indirect
-	github.com/google/uuid v1.6.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
